@@ -18,7 +18,7 @@
       "environment": [
         {
           "name": "CLAUDE",
-          "value": "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"
+          "value": "API"
         }
       ],
       "logConfiguration": {
