@@ -1,0 +1,97 @@
+{
+  "hook_patterns": [
+    {
+      "type": "contrarian",
+      "template": "I think [widely accepted belief] is actually [opposite or nuanced claim].",
+      "example": "I think that if companies are not failing at all with their AI efforts it is a sign that they are not being ambitious enough.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "contrarian",
+      "template": "If you [common practice], then [expected outcome], but [unexpected failure or irony].\n\nYou should [bold verdict].",
+      "example": "If you hire someone. Then ignore what they say. Then tell them what to do. And they do it. And it fails. Then you blame them for not hitting goals. You should be fired.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "question",
+      "template": "Should there be a [novel concept] for [specific audience or technology] to [desired outcome]?",
+      "example": "Should there be a Stack Overflow for AI coding agents to share learnings with each other?",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "timeline",
+      "template": "[Age/Year]: [Action or event].\n[Age/Year]: [Escalating event].\n...\n[Age/Year]: [Climactic outcome].\n\n[Universal lesson from the journey].",
+      "example": "23 yrs old: Left my consulting job. 24 yrs old: Opened 5 gym locations. ... 31 yrs old: Sold 66% of Gym Launch & Prestige Labs at $46.2M valuation.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "bold-claim",
+      "template": "[Desirable outcome] isn't complicated.\n\nIt comes down to [simple framework]:",
+      "example": "Living your best life isn't complicated. It comes down to doing the basics well.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "story",
+      "template": "[Relatable emotional trigger] have a way of reminding us about [universal truth].",
+      "example": "Layoffs have a way of reminding us about loyalty.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "breaking-news",
+      "template": "BREAKING: [Authority/Regulator] gave [Company/Entity] [Timeframe] to [Consequential action] (!)",
+      "example": "BREAKING: Brazil's Attorney General's Office gave Meta 72 HOURS to remove all AI chatbots that simulate children and engage in sexually charged conversations with users (!)",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "historical-insight",
+      "template": "[X] years ago, [landmark event] heralded the start of what is now recognised as [era-defining shift].",
+      "example": "Ten years ago, AlphaGo's legendary match in Seoul heralded the start of what is now recognised as the modern era in AI.",
+      "avg_engagement": "high"
+    },
+    {
+      "type": "fear-based",
+      "template": "Maybe you, like me, read [viral claim about AI] and thought\u2026 [raw emotional reaction].\n\nI did at first.\n\nAnd then I didn't.",
+      "example": "Maybe you, like me, read Matt Shumer's viral piece about AI eliminating 50% of white-collar jobs in the next 1-5 years and thought\u2026 Oh. Isht.",
+      "avg_engagement": "medium"
+    }
+  ],
+  "body_patterns": {
+    "optimal_length": "medium",
+    "line_break_style": "Use single-sentence or two-word lines to create visual breathing room and dramatic pacing. Break after every 1-2 sentences. Never write a wall of text. Each new idea or emotional beat gets its own line. Use blank lines between stanzas of thought to signal a shift in argument or emotion. In lists or timelines, each item gets its own line with no wrapping.",
+    "bullet_usage": "Use bullets only when presenting 3+ parallel items (e.g., a framework, checklist, or product feature list). Prefer prose + line breaks for emotional or narrative content. Bullets signal 'here is a structured takeaway' \u2014 use them to close a post with actionable steps or to summarize a product's capabilities. Never mix bullets with heavy storytelling; it kills momentum.",
+    "rhythm": "Alternate between short punchy sentences (3-7 words) and slightly longer explanatory ones (10-20 words). Use the pattern: STATEMENT. Elaboration. Twist or question. This creates a push-pull rhythm that maintains scroll-stopping tension. Vary cadence deliberately \u2014 two short sentences followed by one longer one feels like a natural breath. End paragraphs with either a provocative question or a declarative punch. Avoid starting consecutive sentences with the same word.",
+    "credibility_moves": [
+      "Drop specific numbers (e.g., '180,000+ subscribers', '6K GitHub stars', '$46.2M valuation') to anchor claims in verifiable reality",
+      "Name-drop recognizable entities, tools, or events (e.g., AlphaGo, Meta, Stack Overflow) to borrow institutional credibility",
+      "Reference a specific external source or viral piece (e.g., Matt Shumer's article) before offering your counter-take",
+      "Use first-person failure or vulnerability before the insight ('I did at first. And then I didn't.') to disarm skepticism",
+      "Include a verifiable product milestone or public launch (e.g., GitHub repo stats, npm install command) to prove traction",
+      "Quote official language from authoritative bodies (e.g., Brazil's Attorney General's notice) verbatim to add weight",
+      "Use a timeline of real dated events to show lived experience rather than abstract advice",
+      "Acknowledge limitations openly ('We're still early in building this out') to signal intellectual honesty"
+    ]
+  },
+  "cta_patterns": [
+    "Join [NUMBER]K+ [audience descriptor] here: [LINK]",
+    "Never miss my [content type] on [topic]. Join my [newsletter/community]'s [NUMBER]+ subscribers.",
+    "Install [TOOL] as follows, and prompt your [agent/team] to use it:\n[CODE SNIPPET]\n\nGitHub: [LINK]",
+    "Read more about [PRODUCT/CONCEPT]: [LINK]",
+    "If this resonated, share it with someone who needs to hear it. And follow me for more on [TOPIC].",
+    "Drop a comment: [direct question tied to the post's core tension]"
+  ],
+  "tone": "Direct, confident, and intellectually honest. The voice is that of a practitioner-turned-teacher \u2014 someone who has done the thing and is now distilling hard-won lessons without hedging. Emotional range moves between urgency and calm authority. Contrarian takes are delivered matter-of-factly, not combatively. Vulnerability is used sparingly but strategically to humanize bold claims. There is zero corporate speak, no passive voice, and no throat-clearing. The reader always feels the author is speaking directly to them, not broadcasting to a crowd. In AI/SaaS contexts specifically, technical credibility is established quickly (with metrics, product details, or named systems) before pivoting to the broader human or business implication.",
+  "avoid": [
+    "Opening with 'I am excited to announce' or any corporate announcement framing \u2014 it signals low authenticity",
+    "Long introductory paragraphs before the core insight \u2014 readers will not scroll past a slow start",
+    "Passive voice constructions that dilute accountability ('mistakes were made', 'it has been found that')",
+    "Vague motivational language without a concrete mechanism or example ('believe in yourself', 'just keep going')",
+    "Walls of text with no line breaks \u2014 visually kills engagement before the first sentence is finished",
+    "Burying the hook \u2014 the first line must stand alone as scroll-stopping; never save the punchline for line 3",
+    "Overusing em-dashes, ellipses, or parenthetical asides to the point where the rhythm collapses",
+    "CTAs that feel transactional without earning it \u2014 a CTA only lands if the body has already delivered value",
+    "Hedging language that undermines a bold claim ('this might work for some people', 'in my humble opinion')",
+    "Posting product updates without framing them around a question, problem, or human tension first",
+    "Using hashtag spam at the end of posts \u2014 it signals low-quality content farming and reduces perceived authority",
+    "Generic AI commentary with no specific workflow, tool, metric, or failure cited \u2014 it reads as filler"
+  ]
+}

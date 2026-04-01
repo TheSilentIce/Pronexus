@@ -1,0 +1,88 @@
+{
+  "industry": "Computer Science / B2B SaaS",
+  "topic_focus": "AI agent workflows",
+  "trends": [
+    {
+      "title": "ARC-AGI-3 Exposes Benchmark Gaming by Frontier Models",
+      "summary": "The newly released ARC-AGI-3 benchmark paper alleges that Gemini 3 and other frontier models achieved inflated ARC-AGI 1 and 2 scores through memorization of benchmark-adjacent training data, not genuine reasoning. Separately, Symbolica AI's agent framework scored 36% on ARC-AGI-3 on day one, signaling rapid progress in agent-based reasoning. This fundamentally undermines trust in published capability benchmarks that B2B SaaS vendors use to select and market AI components.",
+      "relevance_score": 9,
+      "implication": "B2B SaaS companies evaluating or marketing AI capabilities must invest in proprietary, task-specific internal benchmarks rather than relying on published leaderboard scores \u2014 vendor model selection criteria need a complete rethink.",
+      "source": "reddit/r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1s4trph/arcagi_3_paper_alleges_that_gemini_3_and_other/"
+    },
+    {
+      "title": "LLM Inference Throughput Hits 1M+ Tokens/Second",
+      "summary": "Engineers demonstrated Qwen 3.5 27B running at 1.1 million tokens/second on 96 B200 GPUs using vLLM, with data parallelism (DP=8) delivering nearly 4x throughput gains over tensor parallelism \u2014 a critical architectural insight for production deployments. At this throughput level, real-time multi-agent pipelines with dozens of concurrent reasoning steps become economically viable at scale. This marks a meaningful inflection point for latency-sensitive agentic workflows in enterprise SaaS.",
+      "relevance_score": 9,
+      "implication": "SaaS platforms building multi-agent orchestration layers should re-evaluate their inference infrastructure strategy: DP-first serving architectures on modern GPU clusters can dramatically reduce per-token costs and unlock synchronous agent chaining at production scale.",
+      "source": "reddit/r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s4hudr/qwen_35_27b_at_11m_toks_on_b200s_all_configs_on/"
+    },
+    {
+      "title": "Function Calling Accuracy: From 6.75% to 100% with Harness Engineering",
+      "summary": "A talk at the Qwen Meetup Korea demonstrated that purpose-built function calling harnesses can push tool-use accuracy from a baseline of 6.75% to 100% on targeted tasks \u2014 a ~15x improvement without model retraining. This highlights that agent reliability in production is predominantly an engineering and prompt-architecture problem, not purely a model capability problem. For B2B SaaS, this is the difference between a demo and a deployable product.",
+      "relevance_score": 10,
+      "implication": "Product teams shipping AI agent features should prioritize investment in structured function-calling harnesses, input validation layers, and output schemas over model upgrades \u2014 reliability engineering around tool use is now the primary differentiator for production-grade agent workflows.",
+      "source": "reddit/r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s4ydfu/qwen_meetup_function_calling_harness_with_qwen/"
+    },
+    {
+      "title": "MCP Servers Enabling Agents with Verified External Knowledge",
+      "summary": "Developers are building Model Context Protocol (MCP) servers that give AI agents access to verified, domain-specific knowledge bases \u2014 in one example, 4M+ real US court opinions \u2014 eliminating hallucinated citations from agentic legal workflows. This pattern of grounding agents in authoritative external data stores via MCP is emerging as the dominant architecture for regulated-industry deployments. It directly addresses the hallucination liability problem that blocks enterprise AI agent adoption.",
+      "relevance_score": 9,
+      "implication": "B2B SaaS companies targeting regulated verticals (legal, finance, healthcare) should build or partner on MCP server layers that connect agents to auditable, domain-specific knowledge sources, making agent outputs defensible and compliance-friendly.",
+      "source": "reddit/r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1s4q60a/built_an_mcp_server_with_claude_code_that_gives/"
+    },
+    {
+      "title": "Token Budget Compression as a Silent SaaS Risk",
+      "summary": "Users tracking Claude API consumption at scale have documented that Anthropic is covertly reducing effective token-per-session budgets during peak hours without UI disclosure, with some reporting 20-40% context window degradation. This creates silent performance regressions in production agent workflows \u2014 long-context reasoning chains, retrieval-augmented generation pipelines, and multi-turn agents all degrade unpredictably. The lack of transparency from providers introduces a new class of operational risk for B2B platforms built on third-party LLM APIs.",
+      "relevance_score": 8,
+      "implication": "SaaS companies with AI agent products must instrument token consumption telemetry at the application layer and build adaptive context management (summarization, chunking fallbacks) so that upstream provider throttling doesn't silently degrade end-user SLA commitments.",
+      "source": "reddit/r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1s4rreq/hard_data_on_claudes_recent_token_inflation_how/"
+    },
+    {
+      "title": "Structured System Prompts as Agent Behavior Infrastructure",
+      "summary": "Practitioners are converging on structured system prompts with XML-tagged role, context, and constraint sections as a high-leverage primitive for reliably shaping LLM agent behavior \u2014 effectively creating a lightweight behavioral contract layer above the model. This approach is reproducible, version-controllable, and model-agnostic, making it a strong foundation for multi-tenant SaaS products that need to customize agent personas and guardrails per customer. The pattern is gaining traction as a low-code alternative to full fine-tuning for enterprise customization.",
+      "relevance_score": 8,
+      "implication": "B2B SaaS platforms should expose structured system prompt configuration as a first-class product feature \u2014 allowing enterprise customers to define agent roles, constraints, and tone via a UI that generates validated XML prompt templates, reducing implementation time and support burden.",
+      "source": "reddit/r/artificial",
+      "url": "https://www.reddit.com/r/artificial/comments/1s4odb8/claudes_system_prompt_xml_tags_is_the_most/"
+    },
+    {
+      "title": "AI Agents Breaking Into Scientific Discovery Workflows",
+      "summary": "A multi-institutional research team used AI agents to accelerate catalyst discovery for sustainable fuel development, identifying key molecular properties at a pace infeasible with traditional methods. Concurrently, \u00d6rebro University researchers deployed AI-driven digital twins to optimize manufacturing workflows in real time. These examples signal that AI agent systems are crossing from knowledge-work automation into hypothesis-generation and physical-world optimization \u2014 a significant expansion of the addressable market for agentic B2B SaaS.",
+      "relevance_score": 7,
+      "implication": "B2B SaaS vendors focused on R&D workflows (materials science, pharma, industrial manufacturing) should evaluate whether their platforms can expose agent orchestration APIs that interface with simulation environments and lab automation systems \u2014 a nascent but fast-growing category.",
+      "source": "reddit/r/artificial",
+      "url": "https://www.reddit.com/r/artificial/comments/1s4yo21/ai_agent_accelerates_catalyst_discovery_for/"
+    },
+    {
+      "title": "Multi-Agent Conflict Resolution Boosts Warehouse Throughput 25%",
+      "summary": "Researchers demonstrated an AI system that learns to prevent traffic jams among hundreds of autonomous warehouse robots, increasing throughput by 25% through real-time multi-agent coordination. This is a concrete, measured result showing that learned coordination policies between agents outperform rule-based scheduling in high-density, dynamic environments. The underlying techniques \u2014 decentralized multi-agent reinforcement learning with local communication \u2014 are directly applicable to software-side agent orchestration problems in cloud infrastructure and workflow automation.",
+      "relevance_score": 7,
+      "implication": "SaaS companies building multi-agent orchestration platforms should explore learned coordination layers \u2014 not just static DAG-based task routing \u2014 to dynamically resolve resource contention and sequencing conflicts between concurrent agents, especially at high task volumes.",
+      "source": "reddit/r/artificial",
+      "url": "https://www.reddit.com/r/artificial/comments/1s4ykaz/ai_system_learns_to_prevent_warehouse_robot/"
+    },
+    {
+      "title": "Local LLM Deployment Challenging Cloud API Economics",
+      "summary": "A developer documented replacing $2,000/month in Claude API spend by running Qwen3.5 397B locally on a dual DGX Spark or Mac Studio M3 Ultra setup, with breakeven under 12 months. As local inference hardware becomes more accessible and capable, the total cost of ownership calculus for enterprise AI agent deployments is shifting \u2014 particularly for high-volume, latency-tolerant workflows. This creates both a pricing pressure threat and a market opportunity for on-premises or hybrid agent deployment products.",
+      "relevance_score": 8,
+      "implication": "B2B SaaS companies with AI agent products should develop hybrid deployment architectures \u2014 offering cloud-hosted inference for low-volume/high-stakes tasks and on-premises or edge deployment options for high-volume/cost-sensitive workloads \u2014 to remain competitive as local hardware economics improve.",
+      "source": "reddit/r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1s4lmep/dual_dgx_sparks_vs_mac_studio_m3_ultra_512gb/"
+    },
+    {
+      "title": "Frontier Model \"Step Change\" Signals Agent Capability Discontinuity",
+      "summary": "Anthropic has confirmed it is testing 'Mythos,' described as a step-change model that reportedly poses \"unprecedented cybersecurity risks\" \u2014 language that suggests significantly enhanced autonomous action capabilities beyond current Claude versions. If accurate, this represents a potential discontinuity in what AI agents can autonomously accomplish, with implications for both product roadmaps and trust/safety architectures. B2B SaaS platforms built on current agent capability assumptions may need rapid architectural revision when next-generation models ship.",
+      "relevance_score": 8,
+      "implication": "SaaS companies should build agent guardrail and human-in-the-loop frameworks as first-class, configurable infrastructure now \u2014 so they can rapidly dial up or down autonomy levels as underlying model capabilities step-change, without requiring full product re-architecture.",
+      "source": "reddit/r/singularity",
+      "url": "https://www.reddit.com/r/singularity/comments/1s4t3k7/anthropic_is_testing_mythos_its_most_powerful_ai/"
+    }
+  ],
+  "total": 10
+}
+
