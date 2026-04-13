@@ -1,4 +1,4 @@
-# ProNexus
+
 
 A full-stack LinkedIn content generation platform powered by Claude. Given an industry and topic focus, ProNexus scrapes live signals from Reddit, Hacker News, and Semantic Scholar, synthesizes a trend brief, and generates ready-to-post LinkedIn content with A/B hooks, linting, similarity checking, and suggested comments.
 
